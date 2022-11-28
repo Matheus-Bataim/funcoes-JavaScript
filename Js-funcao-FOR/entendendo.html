@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade com Loop </title>
+</head>
+<body>
+    <h1>Modelo de Loop</h1>
+    <div id="aquiFicaLoop"></div>
+    <script>
+        let num = "";
+        //1.atribui a variavel
+        //2.analisa uma condição na variavel
+        //3.executa outro condição
+        //       1      2     3
+         for (let i=0 ;i<6; i++){
+           num +="Número: "+i+"<br>";
+           //console.log(num);
+           document.getElementById("aquiFicaLoop").innerHTML=num;
+        }
+    </script>
+</body>
+</html>

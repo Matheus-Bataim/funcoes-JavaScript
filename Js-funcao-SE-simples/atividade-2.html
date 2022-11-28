@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade-2</title>
+</head>
+<body>
+    <h1>Diferença de peso usando fução SE</h1>
+    <div id="peso"></div>
+    <script>
+    let nome1=prompt("Escreva seu nome: ");
+    let peso1=Number(prompt("Peso: "));
+    let nome2=prompt("Escreva seu nome: ");
+    let peso2=Number(prompt("Peso: "));
+    let kill;
+    let result;
+    let result1;
+    if(peso1>peso2){
+        kill=nome1+" é mais pesado do que "+nome2;
+
+    }
+    else{
+        kill=nome2+" é mais pesado do que "+nome1;
+    }
+    document.getElementById("peso").innerHTML=nome1+" tem "+peso1+" kilos<br> "+nome2+" tem "+peso2+" kilos <br>"+kill;
+    
+    </script>
+</body>
+</html>

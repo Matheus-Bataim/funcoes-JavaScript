@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade-2</title>
+</head>
+<body>
+    <h1>Atividade-2</h1>
+    <div id="so"></div>
+    <div id="so1"></div>
+    <div id="so3"></div>
+    <script>
+        let nome1=prompt("Escreva seu nome:");
+        let peso1=Number(prompt("Digite seu peso"));
+        let nome2=prompt("Escreva seu nome:");
+        let peso2=Number(prompt("Digite seu peso"));
+        let nome3=prompt("Escreva seu nome:"); 
+        let peso3=Number(prompt("Digite seu peso"));
+        //Primeira forma
+      //  let result;
+      //  if(peso1>=peso2 && peso1>=peso3 && peso2>=peso3){
+     //      result=nome1+" pesa "+peso1+
+      //              "<br>"+nome2+" pesa "+peso2+
+      //              "<br>"+nome3+" pesa "+peso3;
+      //  }
+      // document.getElementById("so").innerHTML=result
+
+       //Segunda Forma
+      // let troca;
+      // if(peso2>peso1){
+      ////  troca=peso2;
+      //  peso2=peso1;
+      //  peso1=troca;
+      // }
+      // if(peso2>peso3){
+      //  troca=peso3;
+      //  peso3=pes2;
+      //  peso2=troca;
+      // }
+       //if(peso3>peso2){
+       // troca=peso3;
+       // peso3=peso1;
+       // peso1=troca;
+      // }
+      // document.getElementById("so1").innerHTML=peso1+peso2+peso3;
+       //Terceira Forma
+       let result1;
+        if (peso1>peso2){
+            if(peso1>peso3){
+                if(peso2>peso3){
+                    result1=
+                    nome1+" pesa "+peso1+
+                    "<br>"+nome2+" pesa "+peso2+
+                    "<br>"+nome3+" pesa "+peso3;
+                }else{
+                    result1=
+                    nome1+" pesa "+peso1+
+                    "<br>"+nome3+" pesa "+peso3+
+                    "<br>"+nome2+" pesa "+peso2;
+                }
+            }else{
+                result1=
+                    nome3+" pesa "+peso3+
+                    "<br>"+nome2+" pesa "+peso2+
+                    "<br>"+nome1+" pesa "+peso1;
+            } 
+        }else{
+            if(peso2>peso3){
+                if(peso1>peso3){
+                    result1=("Nota: "+peso2+"<br>Nota: "+peso1+"<br>Nota: "+peso3);
+                }else{
+                    result1=("Nota: "+peso1+"<br>Nota: "+peso2+"<br>Nota: "+peso3)
+                }
+            }else{
+                result1=("Nota: "+peso2+"<br>Nota: "+peso3+"<br>Nota: "+"<br> Nota: "+peso1)
+            }
+        }    
+     document.getElementById("so").innerHTML=result1
+
+    </script>
+</body>
+</html>

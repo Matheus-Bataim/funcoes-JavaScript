@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sequencia até 20</title>
+</head>
+<body>
+    <h1>Sequência até 20</h1>
+    <div id="resul"></div>
+</br>
+<!--span é uma tag que anula a formatação das Tags-->
+<span>1<br></span>
+<span id="so"></span>
+    <script>
+       
+        let resultado="";
+    for( let r=1; r<=20;r++){
+        resultado += r + " / 20"+"</br>";
+        document.getElementById("resul").innerHTML=resultado
+    };
+    //
+        let seque="";
+        let index="";
+    for (let index =2 ; index <=20; index++) {
+        seque += "1/"+index+"<br>"
+        document.getElementById("so").innerHTML=seque
+    }
+    </script>
+</body>
+</html>

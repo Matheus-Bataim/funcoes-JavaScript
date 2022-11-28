@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4.0">
+    <title>função While</title>
+</head>
+<body>
+    <h1>função While</h1>
+    <div id="resul"></div>
+<script>
+    let matricula=1;
+    //let (nota1;nota2;nota3;nota4)=0
+    let nota1=0
+    let nota2=0
+    let nota3=0;
+    let nota4=0;
+    let resultado=""
+    while(matricula!=0){
+        matricula=Number(prompt("Digite a Matricula ou 0 para sair"))
+
+            if(matricula!=0){
+            nota1=Number(prompt("Digite a Nota 1:"))
+            nota2=Number(prompt("Digite a Nota 2:"))
+            nota3=Number(prompt("Digite a Nota 3:"))
+            nota4=Number(prompt("Digite a Nota 4:")) 
+        
+            resultado+="Matriculo: "+matricula+"<br>"+
+            "Nota 1: "+nota1+"<br>"+
+            "Nota 2: "+nota2+"<br>"+
+            "Nota 3: "+nota3+"<br>"+
+            "Nota 4: "+nota4+"<br>"
+            document.getElementById("resul").innerHTML=resultado
+            }
+    }
+    
+</script>
+</body>
+</html>

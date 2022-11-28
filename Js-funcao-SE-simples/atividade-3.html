@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-3</title>
+</head>
+<body>
+    <h1>Idades usando Função SE</h1>
+    <div id="idade"></div>
+    <script>
+        let nome1=prompt("Digite o nome da primeira pessoa: ")
+        let ano1= prompt("Digite seu ano de nascimento: ") 
+        let nome2=prompt("Digite o nome da segunda pessoa: ")
+        let ano2= prompt("Digite seu ano de nascimento: ")    
+        idade1=2022-ano1
+        idade2=2022-ano2
+        let resul
+        if (idade1>idade2){
+            resul=nome1+" é mais velho(a) que "+nome2
+        }else{
+            resul=nome2+" é mais velho(a) que "+nome1        
+        }
+
+        document.getElementById("idade").innerHTML=
+        nome1+" tem "+idade1+" anos <br>"+
+        nome2+" tem "+idade2+" anos <br> então "+resul;
+    </script>
+</body>
+</html>

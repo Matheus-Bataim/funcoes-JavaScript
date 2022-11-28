@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-1</title>
+</head>
+<body>
+    <h1>Boletim Escolar</h1>
+    <div id="so"></div>
+    <script>
+        let aluno = prompt("Escreva o nome do Aluno: ");
+        let nota1= Number(prompt("Média"));
+        let nota2= Number(prompt("Média"));
+        let nota3= Number(prompt("Média"));
+        let media=Number((nota1+nota2+nota3)/3)
+        let result;
+        let notas;
+
+
+       if(nota1>nota2){
+            if(nota1>nota3){
+                if(nota2>nota3){
+                    notas=("Nota: "+nota1+"<br>Nota: "+nota2+"<br>Nota: "+nota3);
+                }else{
+                    notas=("Nota: "+nota1+"<br>Nota: "+nota3+"<br>Nota: "+nota2);
+                }
+            }else{
+                notas=("Nota: "+nota3+"<br>Nota: "+nota1+"<br>Nota:"+nota2);
+            }
+        }
+        else{
+            if(nota2>nota3){
+                if(nota1>nota3){
+                    notas=("Nota: "+nota2+"<br>Nota: "+nota1+"<br>Nota: "+nota3);
+                }else{
+                    notas=("Nota: "+nota1+"<br>Nota: "+nota2+"<br>Nota: "+nota3)
+                }
+            }else{
+                notas=("Nota: "+nota3+"<br>Nota: "+nota2+"<br>Nota: "+nota1)
+            }
+        }    
+
+
+
+
+
+        if(media>=6){
+            result="O aluno "+aluno+" foi aprovado com a média "+media;
+            
+        }
+        else{
+            result="O aluno "+aluno+" foi reprovado com a média "+media;
+        };
+        document.getElementById("so").innerHTML="Aluno: "+aluno+"<br>Boletim do alunos: <br>"+notas+"<br>Situação do Aluno: "+result;
+    </script>
+</body>
+</html>
