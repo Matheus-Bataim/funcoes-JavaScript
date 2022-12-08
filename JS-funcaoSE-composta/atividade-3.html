@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro do Pedido</h1>
+    <div id="so"></div>
+    <script>
+    alert  ("Seja Bem-vindo !!");
+    let nomecliente = prompt("Digite o seu nome");
+    let pedidos = Number(prompt("Olá, " + nomecliente + "\n\nLanches da nossa lanchonete: \n" + "1- Big Super SANDUBA por apenas R$ 5,00  (Especificação: 2 hamburgueres, queijo, batata frita e refrigerante)  \n" + 
+    "2- Quase Super SANDUBA por apenas R$ 3,00  (Especificação: 1 hamburgueres, queijo, batata frita e refrigerante)\n" +
+    "3- Mirradus SANDUBA por apenas R$ 1,50  (Especificação: 1 misto quente e 1 refrigerante)\n" + "\n\n Qual lanche deseja ?\n"));
+   
+   let numlanches;
+   let total;
+   let lanche;
+   switch (pedidos) {
+    case 1:
+        numlanches = Number (prompt("Quantos Big Super Sanduba você deseja ?"));
+        total = numlanches * 5; 
+        lanche = "Big Super Sanduba";
+        break;
+        case 2:
+        numlanches = Number (prompt("Quantos Quase Super Sanduba você deseja ?"));
+        total = numlanches * 3;
+        lanche = "Quase Super SANDUBA";
+        break;
+        case 3:
+        numlanches = Number (prompt("Quantos Mirradus Sanduba você deseja ?"));
+        total = numlanches * 1.5; 
+        lanche = "Mirradus SANDUBA";
+        break;
+        default:
+        lanche = null;
+        break;
+   }
+ 
+   if(lanche == null){
+    document.getElementById("so").innerHTML =  "Cliente: " + nomecliente + "</br>Opção: Invalida </br> Tente novamente."
+}
+   else {
+    document.getElementById("so").innerHTML = "Nome: " + nomecliente + "</br> Lanche: " + lanche + "</br>Quantidade: "+ numlanches+  "</br>Total a pagar: " + total + "R$";
+} 
+</script>
+</body>
+</html>
+        
