@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <h1>Usando o While para Repetir palavras</h1>
+    <div id="so"></div>
+    <div id="so2"></div>
+    <div id="so3"></div>
+    <script>
+        //*while e o for, servem para repetição*
+        let cont=100
+        while(cont<10){
+            let word="Brasil";
+            document.getElementById("so").innerHTML += word+"<br>";
+            cont++;
+        break
+        }
+
+        let cont2=100
+        do{
+            let word="brasil"
+            document.getElementById("so2").innerHTML+=word+"<br>"
+            cont2++
+        }while(cont2<10)
+
+        for(let cont3=10;cont3<10;cont3++){
+            let word="Brasil3"
+            document.getElementById("so3").innerHTML+=word+"<br>"
+        }
+        
+    </script>
+</body>
+</html>

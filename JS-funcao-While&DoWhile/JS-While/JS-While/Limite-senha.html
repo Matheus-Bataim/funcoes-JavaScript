@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio2</title>
+</head>
+<body>
+    <h1>Limite de erros para senha</h1>
+    <div id="so"></div>
+    <script>
+        let senha="123"
+        let tentativas=1
+        let msg=""
+        
+        while(tentativas<4){
+            let senhaUsuario=prompt("Digite a senha:    Tentativa "+tentativas)
+            if(senhaUsuario===senha){
+                tentativas=4
+                msg="Seja Bem-vindo";
+            }else{
+                tentativas++
+                msg="Error 404"
+            }
+        }
+        document.getElementById("so").innerHTML=msg      
+    </script>
+</body>
+</html>

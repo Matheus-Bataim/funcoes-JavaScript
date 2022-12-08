@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Senha simples</title>
+</head>
+<body>
+    <div id="so"></div>
+    <script>
+        let senha=prompt("Digite a senha:")
+        if(senha==="123"){
+        let cont=0
+        while(cont<=20){
+         document.getElementById("so").innerHTML+="Seja Bem-vindo<br>"
+         cont++
+           }
+        }else{
+        let cont=0
+        while(cont<=20){
+         document.getElementById("so").innerHTML+="error 404<br>"
+         cont++
+           }
+        }
+
+    </script>
+</body>
+</html>
